@@ -1,12 +1,10 @@
-# Project Name
+# Build a form on Ruby on Rails
 
 > This is part of the Forms Project in The Odin Project’s Ruby on Rails Curriculum. Find it at http://www.theodinproject.com/courses/ruby-on-rails/lessons/forms and requirement from Microverse Program.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./app_screenshot.PNG)
 
-Additional description about the project and its features.
-
-## Built With
+## Built With ✨
 
 - Ruby Version 2.6.5
 - Rails 6.0.1
@@ -35,10 +33,10 @@ Fork this repo and submit a PR for review and potential merge to main branch
 
 ## Authors
 
-👤 **Author1**
+👨‍💻 **Edem Agbenyo**
 
 - Github: [@edemagbenyo](https://github.com/edemagbenyo)
 
-👤 **Author2**
+👨‍💻 **Christian Salazar**
 
 - Github: [@grifo89](https://github.com/grifo89)
