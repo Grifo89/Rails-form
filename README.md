@@ -4,9 +4,7 @@
 
 ![screenshot](./app_screenshot.PNG)
 
-Additional description about the project and its features.
-
-## Built With
+## Built With ✨
 
 - Ruby Version 2.6.5
 - Rails 6.0.1
