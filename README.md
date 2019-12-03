@@ -1,24 +1,44 @@
-# README
+# Project Name
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> This is part of the Forms Project in The Odin Project’s Ruby on Rails Curriculum. Find it at http://www.theodinproject.com/courses/ruby-on-rails/lessons/forms and requirement from Microverse Program.
 
-Things you may want to cover:
+![screenshot](./app_screenshot.png)
 
+Additional description about the project and its features.
+
+## Built With
+
+- Ruby Version 2.6.5
+- Rails 6.0.1
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
 * Ruby version
+You will need Ruby Version 2.6.5
 
 * System dependencies
+Windows/ Mac
+Rails 6.0.1
 
-* Configuration
+### Install
+Clone project and run
+`bundle install --without production`
 
-* Database creation
+ Start the rails server
+`rails server`
 
-* Database initialization
+## How to contribute and partipate
+Fork this repo and submit a PR for review and potential merge to main branch
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## Authors
 
-* ...
+👤 **Author1**
+
+- Github: [@edemagbenyo](https://github.com/edemagbenyo)
+
+👤 **Author2**
+
+- Github: [@grifo89](https://github.com/grifo89)
