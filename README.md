@@ -35,10 +35,10 @@ Fork this repo and submit a PR for review and potential merge to main branch
 
 ## Authors
 
-👤 **Edem Agbenyo**
+👨‍💻 **Edem Agbenyo**
 
 - Github: [@edemagbenyo](https://github.com/edemagbenyo)
 
-👤 **Christian Salazar**
+👨‍💻 **Christian Salazar**
 
 - Github: [@grifo89](https://github.com/grifo89)
