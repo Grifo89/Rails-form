@@ -1,18 +1,19 @@
 <h1>This is the user's view</h1>
 
 <h2>User Form</h2>
-<form action="index.html" method="post" accept-charset="UTF-8">
+<form action="/users" method="post" accept-charset="UTF-8">
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
   <div class="">
-    <label for="name">User name</label>
-    <input type="text" name="name" value="">
+    <label for="username">User name</label>
+    <input type="text" name="user[username]" id="username">
   </div>
   <div class="">
     <label for="email">Email</label>
-    <input type="text" name="email" value="">
+    <input type="text" name="user[email]" id="email">
   </div>
   <div class="">
     <label for="password">password</label>
-    <input type="password" name="password" value="">
+    <input type="password" name="user[password]" id="password">
   </div>
   <button type="submit" name="button">Submit</button>
 </form>
