@@ -1,6 +1,6 @@
 <h1>This is the user's view</h1>
 
-<h2>User Form</h2>
+<!-- <h2>User Form</h2>
 <form action="/users" method="post" accept-charset="UTF-8">
 <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
   <div class="">
@@ -16,4 +16,36 @@
     <input type="password" name="user[password]" id="password">
   </div>
   <button type="submit" name="button">Submit</button>
-</form>
+</form> -->
+
+<!-- <%= form_with(url: "/users", method: "post") do %>
+  <div>
+    <%= label_tag(:username, "User name") %>
+    <%= text_field_tag(:username) %>
+  </div>
+  <div>
+    <%= label_tag(:email, "Email") %>
+    <%= text_field_tag(:email) %>
+  </div>
+  <div>
+    <%= label_tag(:password, "Password") %>
+    <%= password_field_tag(:password) %>
+  </div>
+  <%= submit_tag("Submit") %>
+<% end %> -->
+
+<%= form_for @user do |f| %>
+  <div>
+    <%= label_tag(:username, "User name") %>
+    <%= f.text_field(:username, value: "Enter your name here", placeholder: "Whatever user") %>
+  </div>
+  <div>
+    <%= label_tag(:email, "Email") %>
+    <%= f.text_field(:email, value: "Enter your email here", placeholder: "example@email.com") %>
+  </div>
+  <div>
+    <%= label_tag(:password, "Password") %>
+    <%= f.password_field(:password) %>
+  </div>
+  <%= submit_tag("Submit") %>
+<% end %>
