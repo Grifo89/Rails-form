@@ -1,0 +1,17 @@
+<h1>This is the user's view</h1>
+
+<%= form_for @user do |f| %>
+  <div>
+    <%= label_tag(:username, "User name") %>
+    <%= f.text_field(:username, placeholder: "Whatever user") %>
+  </div>
+  <div>
+    <%= label_tag(:email, "Email") %>
+    <%= f.text_field(:email, placeholder: "example@email.com") %>
+  </div>
+  <div>
+    <%= label_tag(:password, "Password") %>
+    <%= f.password_field(:password) %>
+  </div>
+  <%= submit_tag("Submit") %>
+<% end %>

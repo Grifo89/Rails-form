@@ -1,0 +1,62 @@
+<h1>This is the user's view</h1>
+
+<!-- <h2>User Form</h2>
+<form action="/users" method="post" accept-charset="UTF-8">
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <div class="">
+    <label for="username">User name</label>
+    <input type="text" name="user[username]" id="username">
+  </div>
+  <div class="">
+    <label for="email">Email</label>
+    <input type="text" name="user[email]" id="email">
+  </div>
+  <div class="">
+    <label for="password">password</label>
+    <input type="password" name="user[password]" id="password">
+  </div>
+  <button type="submit" name="button">Submit</button>
+</form> -->
+
+<!-- <%= form_with(url: "/users", method: "post") do %>
+  <div>
+    <%= label_tag(:username, "User name") %>
+    <%= text_field_tag(:username) %>
+  </div>
+  <div>
+    <%= label_tag(:email, "Email") %>
+    <%= text_field_tag(:email) %>
+  </div>
+  <div>
+    <%= label_tag(:password, "Password") %>
+    <%= password_field_tag(:password) %>
+  </div>
+  <%= submit_tag("Submit") %>
+<% end %> -->
+
+<%= form_for @user do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div>
+    <%= label_tag(:username, "User name") %>
+    <%= f.text_field(:username, value: "Enter your name here", placeholder: "Whatever user") %>
+  </div>
+  <div>
+    <%= label_tag(:email, "Email") %>
+    <%= f.text_field(:email, value: "Enter your email here", placeholder: "example@email.com") %>
+  </div>
+  <div>
+    <%= label_tag(:password, "Password") %>
+    <%= f.password_field(:password) %>
+  </div>
+  <%= submit_tag("Submit") %>
+<% end %>
